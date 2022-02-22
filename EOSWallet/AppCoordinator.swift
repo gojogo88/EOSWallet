@@ -17,6 +17,8 @@ class AppCoordinator {
     func start() {
         
          let viewController = ViewController()
+//        let viewModel = AccountViewModel(networkService: NetworkService.shared)
+//        viewController.viewModel = viewModel
          let navController = UINavigationController(rootViewController: viewController)
          window.rootViewController = navController
          window.makeKeyAndVisible()
